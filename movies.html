@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="movies.css" />
+  </head>
+  <body>
+    <h1>KANDLE MULTIPLEX</h1>
+    <div id="nav">
+      <div>
+        <a href="index.html">Home</a>
+      </div>
+      <div>
+        <a href="movies.html">Movies</a>
+      </div>
+      <div>
+        <a href="">My Movies</a>
+      </div>
+    </div>
+
+    <select name="category" id="category">
+      <option value="">Select CAtegory</option>
+      <option value="fiction">Fiction</option>
+      <option value="action">Action</option>
+      <option value="comedy">Comedy</option>
+    </select>
+    <h2>current movies:- <span></span></h2>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Main Actor</th>
+            <th>Description</th>
+            <th>Release Date</th>
+            <th>category</th>
+            <th>Price</th>
+            <th>Buy Ticket</th>
+          </tr>
+        </thead>
+        <tbody id="body">
+          <!-- Append your output to tbody -->
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
+<script src="movies.js"></script>

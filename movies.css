@@ -1,0 +1,38 @@
+h1,h2{
+    text-align: center;
+}
+
+#nav{
+  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    font-size: 25px;
+    padding: 20px;
+    background-color: aquamarine;
+
+}
+
+table,
+td,
+th {
+  border: 1px solid #ddd;
+ 
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+tr > th {
+  background-color:yellow;
+  
+}

@@ -1,0 +1,38 @@
+h1,h2{
+    text-align: center;
+}
+
+#nav{
+  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    font-size: 25px;
+    padding: 20px;
+    background-color: aquamarine;
+
+}
+
+#container{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+width: 30%;
+margin: auto;
+padding: 10px;
+}
+
+input[type="text"],input[type="number"],input[type="date"] {
+    padding: 15px;
+    width: 90% ;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"],select{
+    padding: 15px;
+    width: 97% ;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
