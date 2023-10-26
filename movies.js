@@ -1,9 +1,26 @@
-let moviesData = JSON.parse(localStorage.getItem("movieslist"));
-
+// data coming from the home page
+let moviesData = JSON.parse(localStorage.getItem("movieslist")) || [];
+// data string of my movies
 let tomy = JSON.parse(localStorage.getItem("mymovies")) || [];
-B(moviesData);
+Table(moviesData);
+// movies count
+document.querySelector("h2>span").innerText = moviesData.length;
 
-function B(res) {
+// select category
+
+let SELECT = document.querySelector("#category");
+SELECT.addEventListener("change", Category);
+
+function Category() {
+  let Filter = moviesData.filter(function (el) {
+    return el.movie_category === SELECT.value;
+  });
+
+  Table(Filter);
+}
+
+// responsible for making table
+function Table(res) {
   document.querySelector("tbody").innerHTML = "";
   res.forEach(function (el, i) {
     let tr = document.createElement("tr");
@@ -38,8 +55,11 @@ function B(res) {
   });
 }
 function buy(el, i) {
+  // data pusing to the my movies
   tomy.push(el);
   localStorage.setItem("mymovies", JSON.stringify(tomy));
+
+  // deleting the row
   moviesData.splice(i, 1);
   localStorage.setItem("movieslist", JSON.stringify(moviesData));
 }
